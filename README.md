@@ -71,6 +71,11 @@ Berikut adalah beberapa tangkapan layar dari aplikasi.
 **Jika Salah Input Jam Kerja**
 ![Tampilan jika terjadi kesalahan input jam kerja](gallery/salah-input-jam-kerja.png)
 
+## Demo Aplikasi
+
+Anda juga dapat melihat demo aplikasi dalam format video melalui tautan berikut:
+
+[Tonton Demo Aplikasi](https://drive.google.com/file/d/1Jyp9fiFPcH3LuBODkwEtgWO_CjCfRWtk/view?usp=sharing)
 
 ## Catatan Tambahan
 - Aplikasi menggunakan ANSI escape codes untuk warna teks.
