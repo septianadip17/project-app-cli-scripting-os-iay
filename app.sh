@@ -21,23 +21,14 @@ LINE="${CYAN}=========================================================${RESET}"
 # -----------------------
 format_rupiah() {
   local num="$1"
-  # kalau bukan angka (integer atau desimal) kembalikan apa adanya
-  if ! [[ "$num" =~ ^-?[0-9]+([.][0-9]+)?$ ]]; then
-    printf "%s" "$num"
-    return
-  fi
-  # simpan tanda minus bila ada, pisah bagian integer dan desimal
-  local sign=""
-  [[ "$num" == -* ]] && sign="-" && num="${num#-}"
-  local int="${num%%.*}"
-  local frac=""
-  [[ "$num" == *.* ]] && frac=".${num#*.}"
-  # sisipkan titik tiap 3 digit dari kanan (pakai rev + sed)
-  int=$(printf "%s" "$int" | rev | sed -E 's/([0-9]{3})/\1./g' | rev)
-  int="${int#.}"   # hilangkan titik di depan bila ada
-
-  printf "%s%s%s" "$sign" "$int" "$frac"
+  # tambahkan titik setiap 3 digit dari kanan
+  local formatted
+  formatted=$(echo "$num" | rev | sed -E 's/([0-9]{3})/\1./g' | rev)
+  # hapus titik di depan jika muncul
+  formatted="${formatted#.}"
+  printf "%s" "$formatted"
 }
+
 
 # -----------------------
 # Util: inisialisasi penyimpanan
