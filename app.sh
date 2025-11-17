@@ -116,7 +116,8 @@ prompt_hours() {
     if [[ "$hours" =~ ^[0-9]+$ ]]; then
       break
     else
-      printf "%b\n" "${YELLOW}Input jam harus angka bulat. Contoh: 40 atau 55${RESET}"
+      printf "%b\n" "${RED}Input jam angkanya saja dan angka bulat.${RESET}"
+      printf "%b\n" "${YELLOW}Contoh: 40 atau 55.${RESET}"
     fi
   done
 }
