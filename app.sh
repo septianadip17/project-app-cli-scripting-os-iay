@@ -85,7 +85,7 @@ prompt_name() {
 # -----------------------
 prompt_position() {
   while true; do
-    printf "%b" "${CYAN}Posisi        : ${RESET}"
+    printf "%b" "${CYAN}Jabatan       : ${RESET}"
     read -r position
     pos_lc=$(printf "%s" "$position" | tr '[:upper:]' '[:lower:]')
     case "$pos_lc" in
@@ -157,7 +157,7 @@ print_result() {
   printf "%b\n" "$LINE"
 
   printf "%-15s : %s\n" "Nama" "$name"
-  printf "%-15s : %s\n" "Posisi" "$position"
+  printf "%-15s : %s\n" "Jabatan" "$position"
   printf "%-15s : %s jam\n" "Jam kerja" "$hours"
   printf "%-15s : Rp %s\n" "Rate" "$(format_rupiah "$rate")"
   printf "%-15s : Rp %s\n" "Total Gaji" "$(format_rupiah "$total_pay")"
