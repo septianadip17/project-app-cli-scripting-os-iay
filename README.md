@@ -52,6 +52,26 @@ name|position|hours|rate|total|timestamp
 - Total gaji dihitung berdasarkan rate dan lembur.  
 - Data disimpan ke `employees.csv`.
 
+## Galeri Aplikasi
+
+Berikut adalah beberapa tangkapan layar dari aplikasi.
+
+**Tampilan Awal Aplikasi**
+![Tampilan awal saat aplikasi dijalankan](gallery/tampilan-awal.png)
+
+**Proses Hitung Gaji**
+![Proses perhitungan gaji yang ditampilkan](gallery/proses-hitung-gaji.png)
+
+**Hasil Perhitungan Gaji**
+![Hasil akhir perhitungan gaji yang ditampilkan](gallery/hasil-akhir-gaji.png)
+
+**Jika Salah Input Jabatan**
+![Tampilan jika terjadi kesalahan input jabatan](gallery/salah-input-jabatan.png)
+
+**Jika Salah Input Jam Kerja**
+![Tampilan jika terjadi kesalahan input jam kerja](gallery/salah-input-jam-kerja.png)
+
+
 ## Catatan Tambahan
 - Aplikasi menggunakan ANSI escape codes untuk warna teks.
 - Perhitungan dilakukan dengan aritmetika integer Bash.
